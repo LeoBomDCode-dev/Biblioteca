@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* REMOVE SCROLL LATERAL */
+html, body {
+    overflow-x: hidden;
+}
+ 
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f1f5f9;
+}
+ 
+/* AGORA FULL SCREEN */
+.app {
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+    padding: 30px 50px;
+}
+ 
+/* HEADER */
+header {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+ 
+header input {
+    flex: 1;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+ 
+/* SEÇÕES */
+section {
+    padding: 30px 0;
+}
+ 
+h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+ 
+/* GRID */
+#resultadosBusca {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+ 
+/* LIVRO */
+.livro {
+    display: flex;
+    gap: 25px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    align-items: flex-start;
+}
+ 
+/* IMAGEM */
+.livro img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+ 
+/* INFO */
+.info h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+ 
+.info p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+ 
+/* DETALHES */
+.detalhes {
+    margin-top: 12px;
+}
+ 
+.descricao {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #374151;
+}
+ 
+/* STATUS */
+.disponivel {
+    color: #2563eb;
+    font-weight: bold;
+}
+ 
+.indisponivel {
+    color: #dc2626;
+    font-weight: bold;
+}
+ 
+/* BOTÃO */
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 15px;
+}
+ 
+button.reservado {
+    background: #16a34a;
+}
+ 
+button:disabled {
+    background: #9ca3af;
+}
+ 
+/* DESTAQUE */
+#livroDestaque {
+    background: #eff6ff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
