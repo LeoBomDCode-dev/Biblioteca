@@ -13,7 +13,7 @@ const livrosEncontrados = [
         titulo: "Memórias Póstumas",
         autor: "Machado de Assis",
         descricao: "Narrador defunto com ironia.",
-        imagem: "https://covers.openlibrary.org/b/id/8231990-L.jpg",
+        imagem: "https://martinsfontespaulista.vteximg.com.br/arquivos/ids/230394-800-800/881548_thumb.jpg?v=637250189569400000.jpeg",
         disponivel: true
     },
     {
@@ -29,7 +29,7 @@ const livrosEncontrados = [
         titulo: "Dom Casmurro",
         autor: "Machado de Assis",
         descricao: "História sobre dúvida e memória.",
-        imagem: "https://covers.openlibrary.org/b/id/8231856-L.jpg",
+        imagem: "https://m.media-amazon.com/images/I/61x1ZHomWUL.jpg",
         disponivel: true
     }
 ];
@@ -141,3 +141,5 @@ inputBusca.addEventListener("input", () => {
 // INIT
 exibirDestaque(livrosEncontrados[0]);
 exibirLista(livrosEncontrados.slice(1));
+
+console.log(livrosEncontrados[0])

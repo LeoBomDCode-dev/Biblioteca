@@ -25,7 +25,7 @@ body {
 /* HEADER */
 header {
     display: flex;
-    gap: 15px;
+    gap: 100px;
     padding-bottom: 20px;
     border-bottom: 1px solid #e5e7eb;
 }
@@ -51,8 +51,9 @@ h3 {
 /* GRID */
 #resultadosBusca {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns:  1fr;
     gap: 25px;
+    padding: 1fr;
 }
  
 /* LIVRO */
@@ -131,4 +132,15 @@ button:disabled {
     padding: 25px;
     border-radius: 12px;
     margin-bottom: 25px;
+}
+
+@media (min-width: 600px){
+    .app {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 900px){
+    .app {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

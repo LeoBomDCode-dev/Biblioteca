@@ -1,0 +1,102 @@
+body{
+    display: grid;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    background-color: antiquewhite;
+    
+}
+
+.container{
+    display: flex; /* Habilita flexbox*/
+    flex-wrap: wrap; /*Permite que os itens quebrem para a proxima linha
+    se não couberem*/
+    width: 90%;
+    max-width: 1200px; /*Limite Máximo para telas grandes*/
+    margin: 20px auto; /*Centraliza o container e adiciona margem superior/
+    inferior*/
+    gap: 2%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px;
+}   
+
+.livro {
+    display: flex;
+    gap: 25px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.livro img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+ 
+.info h4 {
+    font-size: 22px;
+    margin-bottom: 55px;
+}
+ 
+.info p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+ 
+
+
+
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#livroDestaque {
+    background:wheat;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+header input {
+    flex: 0.3;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 100px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    gap: 100px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#resultadosBusca {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1, 1fr));
+    gap: 25px;
+}
+
+
+@media (min-width: 600px){
+    .resultadosBusca {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 900px){
+    .resultadosBusca {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
