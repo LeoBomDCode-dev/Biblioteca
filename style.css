@@ -1,3 +1,11 @@
+#resultadosBusca {
+    display: grid;
+    gap: 25px;
+    grid-template-columns:  1fr;
+    padding: 20px;
+    width: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +27,7 @@ body {
     width: 100%;
     min-height: 100vh;
     background: #fff;
-    padding: 30px 50px;
+    padding: 20px;
 }
  
 /* HEADER */
@@ -32,6 +40,8 @@ header {
  
 header input {
     flex: 1;
+    width: 100%;
+    min-width: 0;
     padding: 14px;
     border-radius: 10px;
     border: 1px solid #ccc;
@@ -59,16 +69,19 @@ h3 {
 /* LIVRO */
 .livro {
     display: flex;
-    gap: 25px;
+    flex-direction: column;
+
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 12px;
-    align-items: flex-start;
+    
+    min-width: 0;
 }
  
 /* IMAGEM */
 .livro img {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: auto;
     border-radius: 10px;
 }
@@ -76,7 +89,7 @@ h3 {
 /* INFO */
 .info h4 {
     font-size: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
  
 .info p {
@@ -135,12 +148,12 @@ button:disabled {
 }
 
 @media (min-width: 600px){
-    .app {
+    #resultadosBusca {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 @media (min-width: 900px){
-    .app {
+    #resultadosBusca {
         grid-template-columns: repeat(3, 1fr);
     }
 }

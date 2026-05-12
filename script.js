@@ -13,7 +13,7 @@ const livrosEncontrados = [
         titulo: "Memórias Póstumas",
         autor: "Machado de Assis",
         descricao: "Narrador defunto com ironia.",
-        imagem: "https://martinsfontespaulista.vteximg.com.br/arquivos/ids/230394-800-800/881548_thumb.jpg?v=637250189569400000.jpeg",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Br_JhGlLQrEJDUnA-2NBch-wW_-f-eI8KQ&s",
         disponivel: true
     },
     {
@@ -30,6 +30,30 @@ const livrosEncontrados = [
         autor: "Machado de Assis",
         descricao: "História sobre dúvida e memória.",
         imagem: "https://m.media-amazon.com/images/I/61x1ZHomWUL.jpg",
+        disponivel: true
+    },
+    {
+        id: 5,
+        titulo: "Harry Potter",
+        autor: "J.K Rowling",
+        descricao: "Bruxos",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSavDwVEwhIG_Luy_yf7Brj6fam1Xoyjxq_rg&s",
+        disponivel: false
+    },
+    {
+        id: 6,
+        titulo: "A arte da guerra",
+        autor: "Sun Tzu",
+        descricao: "A arte e conhecimentos da guerra",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS55mWCuKUvKb7KDMN2Ia3VH8wyRIyVcLxzvQ&s",
+        disponivel: true
+    },
+    {
+        id: 7,
+        titulo: "Como fazer amigos e influenciar pessoas",
+        autor: "Dale Carnage",
+        descricao: "O conhecimento dos aspectos sociais humanos e como usalos a seu favor",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPRqm2YPVlfe_RUlpjj4SQxXMaA-_Z0a5b2g&s",
         disponivel: true
     }
 ];
